@@ -1,10 +1,3 @@
-let artist1="myBloodyValentine"
-let artist2=
-let artist3="philOchs"
-let song1="Sometimes"
-let song2=
-let song3="Here\'sToTheStateOfMissisippi"
-
 var playlist = {
   artist1: "song1",
   artist2: "song2",
