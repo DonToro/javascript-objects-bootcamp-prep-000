@@ -1,3 +1,22 @@
+var playlist = {
+  artist1: "song1",
+  artist2: "song2",
+  artist3: "song3"
+};
+
+function updatePlaylist(thePlaylist, artistName, songTitle) {
+  return Object.assign({}, thePlaylist, { [artistName]: songTitle});
+}
+
+updatePlaylist(playlist, "artist4", "song4");
+
+function removeFromPlaylist(thePlaylist, artistName) {
+  delete thePlaylist[artistName];
+  return thePlaylist;
+}
+
+removeFromPlaylist(playlist, "artist2");
+
   it('defines an object called `playlist` containing at least one artist-song pair', () => {
     expect(typeof playlist).to.equal('object')
     expect(Object.keys(playlist).length).to.be.greaterThan(0)
